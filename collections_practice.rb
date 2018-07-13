@@ -47,7 +47,11 @@ end
 
 
 def merge_data(keys, data)
-  keys.each 
+  keys.each do |hash|
+    if data.keys.include?(hash[:first_name])
+      
+    end
+  end
   
   
   keys.each do |hash|
