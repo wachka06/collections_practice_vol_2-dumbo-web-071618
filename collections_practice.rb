@@ -46,7 +46,10 @@ end
 
 
 def merge_data(keys, data)
-  
+  keys.each do |hash|
+    if hash[:first_name] == data
+    end
+  end
 end
 
 def find_cool(cool)
