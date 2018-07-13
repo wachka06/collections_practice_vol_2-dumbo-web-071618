@@ -37,7 +37,7 @@ def count_elements(array)
   result = []
   
   array.each do |hash| 
-    binding.pry
+ 
     if hash.keys.include?(:count)
       hash[:count] += 1
     else
