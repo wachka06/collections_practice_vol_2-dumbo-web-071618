@@ -51,7 +51,7 @@ end
 def count_elements(array)
   key_array = []
   array.each do |hash|
-    key_array.concat(hash.keys[:name]) 
+    key_array.concat(hash.values) 
   end
  
  binding.pry 
