@@ -54,7 +54,7 @@ def count_elements(array)
     key_array.concat(hash.values) 
   end
  
- binding.pry 
+# binding.pry 
   array.each do |hash|
     if key_array.include?(hash[:name])
       hash[:count] = key_array.count(hash[:name])
