@@ -35,8 +35,10 @@ def count_elements(array)
   result = array
   
   result.each do |hash| 
-    hash.each do |key, val|
-      
+    if hash.keys.include?(:count)
+      hash[:count] += 1
+    else
+      hash[:count] = 1
     end
   end
   result
