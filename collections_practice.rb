@@ -31,21 +31,35 @@ def remove_non_strings(array)
   array.delete_if{|word| word.class != String}
 end
 
-def count_elements(array)
-  # array.keys.count{|word| word.to_s.include?("ashley") || word.to_s.include?("blake")}
+# def count_elements(array)
+#   # array.keys.count{|word| word.to_s.include?("ashley") || word.to_s.include?("blake")}
   
 
   
-  array.each do |hash| 
+#   array.each do |hash| 
  
-    if hash.keys.include?()
-      hash[:count] += 1
-    else
-      hash[:count] = 1
+#     if hash.keys.include?()
+#       hash[:count] += 1
+#     else
+#       hash[:count] = 1
       
+#     end
+#   end
+#   array
+# end
+
+def count_elements(array)
+  key_array = []
+  array.each do |hash|
+    key_array << hash.keys 
+  end
+
+  array.each do |hash|
+    if key_array.include?(hash[:name])
+      hash[:count] = key_array.count(hash[:name])
     end
   end
-  array
+    array.uniq
 end
 
 
