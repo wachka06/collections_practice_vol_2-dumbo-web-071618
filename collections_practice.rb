@@ -79,8 +79,9 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
+  
   schools.each do |school, data|
-    if data[:schools]
+    if data[:location]
     end
   end
 end
