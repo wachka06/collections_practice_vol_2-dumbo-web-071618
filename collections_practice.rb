@@ -58,11 +58,13 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
+  result = []
   cool.each do |hash|
-    if hash.fetch == "cool"
-      
+    if hash.fetch("cool") == true
+      result << hash
     end
   end
+  result
 end
 
 def organize_schools(schools)
