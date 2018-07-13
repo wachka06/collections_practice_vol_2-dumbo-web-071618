@@ -60,10 +60,8 @@ end
 
 def find_cool(cool)
   result = []
+  
   cool.each do |hash|
-    # if hash.fetch("cool") 
-    #   result << hash
-    # end
     hash.each do |key, val|
       if key == "cool"|| val == "cool"
         result << hash
