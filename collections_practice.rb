@@ -53,7 +53,7 @@ def merge_data(keys, data)
   
   keys.each do |hash|
     if data[0].keys.include?(hash[:first_name])
-      data[0][:first_name][hash[:first_name]]
+      data[0][:first_name][hash[:first_name]][:awesomeness] = 
     end
   end
   data
