@@ -52,8 +52,9 @@ end
 def merge_data(keys, data)
   
   keys.each do |hash|
-    binding.pry
+    
     if data[0].keys.include?(hash[:first_name])
+      binding.pry
       hash[:awesomeness] = data[0][:first_name][hash[:first_name]][:awesomeness]
       hash[:height] = data[0][:first_name][hash[:first_name]][:height]
       hash[:last_name] = data[0][:first_name][hash[:first_name]][:last_name]
