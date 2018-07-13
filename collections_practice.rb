@@ -77,9 +77,14 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
+  result = {}
   
   schools.each do |school, data|
-    if data[:location] = 
+    if result.keys.include?(data[:location])
+      result[data[:location]] << school
+    else
+      result[data[:location]] = [school]
     end
   end
+  result
 end
