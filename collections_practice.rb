@@ -55,7 +55,7 @@ def merge_data(keys, data)
     if data[0].keys.include?(hash[:first_name])
       hash[:awesomeness] = data[0][:first_name][hash[:first_name]][:awesomeness]
       hash[:height] = data[0][:first_name][hash[:first_name]][:height]
-      hash[:awesomeness] = data[0][:first_name][hash[:first_name]][:awesomeness]
+      hash[:last_name] = data[0][:first_name][hash[:first_name]][:last_name]
     end
   end
   data
