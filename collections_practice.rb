@@ -58,7 +58,7 @@ def merge_data(keys, data)
       hash[:last_name] = data[0][:first_name][hash[:first_name]][:last_name]
     end
   end
-  data
+  keys
 end
 
 def find_cool(cool)
