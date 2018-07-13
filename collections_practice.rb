@@ -61,9 +61,9 @@ end
 def find_cool(cool)
   result = []
   cool.each do |hash|
-    if hash.fetch("cool") 
-      result << hash
-    end
+    # if hash.fetch("cool") 
+    #   result << hash
+    # end
   end
   result
 end
