@@ -36,10 +36,10 @@ def count_elements(array)
   
   result.each do |hash| 
     hash.each do |key, val|
-
+      
     end
   end
-  
+  result
 end
 
 
