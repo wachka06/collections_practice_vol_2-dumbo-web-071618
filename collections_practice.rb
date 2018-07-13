@@ -33,7 +33,6 @@ def count_elements(array)
   # array.keys.count{|word| word.to_s.include?("ashley") || word.to_s.include?("blake")}
   
   
-  result = array
   
   result.each do |hash| 
     if hash.keys.include?(:count)
