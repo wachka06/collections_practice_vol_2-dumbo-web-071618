@@ -34,7 +34,7 @@ end
 def count_elements(array)
   # array.keys.count{|word| word.to_s.include?("ashley") || word.to_s.include?("blake")}
   
-  result = []
+
   
   array.each do |hash| 
  
@@ -42,10 +42,10 @@ def count_elements(array)
       hash[:count] += 1
     else
       hash[:count] = 1
-      result << hash
+      
     end
   end
-  result
+  array
 end
 
 
