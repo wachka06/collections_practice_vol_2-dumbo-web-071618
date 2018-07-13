@@ -1,3 +1,5 @@
+require 'pry'
+
 # your code goes here
 
 def begins_with_r(array)
@@ -32,9 +34,10 @@ end
 def count_elements(array)
   # array.keys.count{|word| word.to_s.include?("ashley") || word.to_s.include?("blake")}
   
+  result = []
   
-  
-  result.each do |hash| 
+  array.each do |hash| 
+    binding.pry
     if hash.keys.include?(:count)
       hash[:count] += 1
     else
