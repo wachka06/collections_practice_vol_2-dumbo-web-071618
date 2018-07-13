@@ -42,6 +42,7 @@ def count_elements(array)
       hash[:count] += 1
     else
       hash[:count] = 1
+      result << hash
     end
   end
   result
