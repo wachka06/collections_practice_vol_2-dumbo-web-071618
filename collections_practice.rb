@@ -64,6 +64,11 @@ def find_cool(cool)
     # if hash.fetch("cool") 
     #   result << hash
     # end
+    hash.each do |key, val|
+      if key == "cool"|| val == "cool"
+        result << hash
+      end
+    end
   end
   result
 end
