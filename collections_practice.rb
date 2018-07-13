@@ -36,9 +36,7 @@ def count_elements(array)
   
   result.each do |hash| 
     hash.each do |key, val|
-      if key.to_s.include?("ashley") || key.to_s.include?("blake")
-        
-      end
+
     end
   end
   
