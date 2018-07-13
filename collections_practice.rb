@@ -50,10 +50,9 @@ end
 
 
 def merge_data(keys, data)
-  data[0]
   
   keys.each do |hash|
-    if data.keys.include?(hash[:first_name])
+    if data[0].keys.include?(hash[:first_name])
       
     end
   end
