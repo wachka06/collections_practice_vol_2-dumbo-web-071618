@@ -50,6 +50,8 @@ end
 
 
 def merge_data(keys, data)
+  data[0]
+  
   keys.each do |hash|
     if data.keys.include?(hash[:first_name])
       
