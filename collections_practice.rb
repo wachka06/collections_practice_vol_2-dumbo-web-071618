@@ -59,7 +59,9 @@ end
 
 def find_cool(cool)
   cool.each do |hash|
-    
+    if hash.fetch == "cool"
+      
+    end
   end
 end
 
