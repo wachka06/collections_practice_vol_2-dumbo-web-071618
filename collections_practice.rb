@@ -80,7 +80,7 @@ end
 
 def organize_schools(schools)
   schools.each do |school, data|
-    data.each do ||
+    if data[:schools]
     end
   end
 end
